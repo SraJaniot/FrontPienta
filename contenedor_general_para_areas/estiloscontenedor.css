@@ -24,6 +24,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-height: calc(100vh - 70px); /* Ajusta este valor según la altura de tu título */
     overflow-y: auto;
+    
 }
 
 .contenido-contexto {
@@ -89,7 +90,7 @@ label {
 
 
 
-  input[type="text"], textarea {
+  input[type="text"], textarea, input[type="number"] {
     background: rgba(255,255,255,0.1);
     border: none;
     font-size: 16px;
@@ -113,6 +114,37 @@ label {
     display: inline-block;
     margin-right: 10px; /* Añade un espacio a la derecha de cada elemento */
 }
+
+.botonCreado {
+    width: 25%; /* Reduce el ancho */
+    margin: 0 auto;
+    margin-top: 15px; /* Centra el botón */
+    color: #ffffff;
+    background: #39A900;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824b;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block; /* Necesario para centrar el botón con margin: auto */
+    
+}
+
+.botonCreado:hover {
+    background: #60AD39;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+  .botonCreadon:active {
+    border: 0;
+    transition: all 0.2s ease;
+  }
+
 
 
 /* ... ESTILO PARA SUBIR MULTIMEDIA ... */

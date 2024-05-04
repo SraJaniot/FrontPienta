@@ -65,13 +65,15 @@
                         <label for="bio">Enunciado de la pregunta</label>
                         <textarea id="descripcion_contexto"></textarea>
 
-                        
+                        <label for="numericInput">Valor de la pregunta</label>
+                        <input type="number" id="numericInput" name="numericInput">
 
                         <label for="autor">Autor de la pregunta</label>
                         <input type="text" id="autor">
 
                     </form>
                    
+                    
 
 
                 </div>
@@ -88,8 +90,8 @@
                     <form action="">
                         <div class="Op_A">
                         
-                            <label>Opción A:</label>
-                            <input type="text" id="Op_A">
+                            <label for="bio">Opción A</label>
+                            <textarea id="OpcionA"></textarea>
                             <div class="radio-option">
                                 <input type="radio" id="rtacorrecta" value="correct1" name="Respuesta1">
                                 <label for="under_13" class="light">Correcta</label>
@@ -103,8 +105,8 @@
     
                         <div class="Op_B">
                             
-                            <label>Opción B:</label>
-                            <input type="text" id="Opcion_B">
+                            <label for="bio">Opción B</label>
+                            <textarea id="OpcionB"></textarea>
                             <div class="radio-option">
                                 <input type="radio" id="rtacorrecta" value="correct2" name="Respuesta2">
                                 <label for="under_13" class="light">Correcta</label>
@@ -118,8 +120,8 @@
     
                         <div class="Op_C">
                             
-                            <label>Opción C:</label>
-                            <input type="text" id="Opcion_C">
+                            <label for="bio">Opción C</label>
+                            <textarea id="OpcionC"></textarea>
                             <div class="radio-option">
                                 <input type="radio" id="rtacorrecta" value="correct3" name="Respuesta3">
                                 <label for="under_13" class="light">Correcta</label>
@@ -133,8 +135,8 @@
     
                         <div class="Op_D">
                             
-                            <label>Opción D:</label>
-                            <input type="text" id="Opcion_D">
+                            <label for="bio">Opción D</label>
+                            <textarea id="OpcionD"></textarea>
                             <div class="radio-option">
                                 <input type="radio" id="rtacorrecta" value="correct4" name="Respuesta4">
                                 <label for="under_13" class="light">Correcta</label>
@@ -151,7 +153,10 @@
                 </div>
             </details>
         </div>
-       
+        <div class="botonCrear">
+            <button class="botonCreado" type="button">Crear</button>
+        </div>
+        
     </div>
 </body>
 </html>
