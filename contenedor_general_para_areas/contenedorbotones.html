@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor para accesos a creación de los formularios</title>
+    <link rel="stylesheet" href="estiloscontenedor.css">
+</head>
+<body>
+    <div class="contenedor-para-formularios">
+
+        <div class="titulo">
+            <h1>Selecciona una opción</h1>
+        </div>
+        <div class="formulario-contexto">
+            <details class="CTA">
+                <summary>Formulario Contexto</summary>
+                <div class="contenido-contexto">
+                    <form action="">
+                        <label for="name">Nombre contexto:</label>
+                        <input type="text" id="nombre_contexto">
+
+                        <label for="bio">Descripción contexto</label>
+                        <textarea id="descripcion_contexto"></textarea>
+
+                        <label for="multimedia">Archivo multimedia</label>
+                        <div class="file-upload">
+                            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Añadir Imagen</button> <!-- Para tener en cuenta al momento de pasarse a Angular -->
+                          
+                            <div class="image-upload-wrap">
+                                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*,video/*,audio/*" />
+                                <div class="drag-text">
+                                    <h3>Sube o arrastra un archivo hasta aquí</h3>
+                                </div>
+                            </div>
+                            <div class="file-upload-content">
+                                <img class="file-upload-image" src="#" alt="your image" />
+                                <div class="image-title-wrap">
+                                    <button type="button" onclick="removeUpload()" class="remove-image">Eliminar archivo <span class="image-title">Cargar imagen</span></button>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- JQUERY--> 
+                            <!-- JQUERY PARA LA SUBIDA Y ELIMINACIÓN DE ARCHIVOS -->
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+                            <!-- Funcion para seleccionar un archivo, pero no hace más -->
+                            <script  src="./script.js"></script>
+
+                        <label for="autor">Autor</label>
+                        <input type="text" id="autor">
+                    </form>
+                    
+                </div>
+            </details>
+        </div>
+        <!-- Formulario preguntas -->
+
+        <div class="formulario-preguntas">
+            <details class="CTA">
+                <summary>Formulario Preguntas</summary>
+                <div class="contenido-preguntas">
+                    
+                    <form action="">
+
+                        <label for="bio">Enunciado de la pregunta</label>
+                        <textarea id="descripcion_contexto"></textarea>
+
+                        
+
+                        <label for="autor">Autor de la pregunta</label>
+                        <input type="text" id="autor">
+
+                    </form>
+                   
+
+
+                </div>
+            </details>
+        </div>
+
+        <!-- Formulario opciones -->
+
+        <div class="formulario-opciones">
+            <details class="CTA">
+                <summary>Formulario Opciones</summary>
+                <div class="contenido-opciones">
+
+                    <form action="">
+                        <div class="Op_A">
+                        
+                            <label>Opción A:</label>
+                            <input type="text" id="Op_A">
+                            <div class="radio-option">
+                                <input type="radio" id="rtacorrecta" value="correct1" name="Respuesta1">
+                                <label for="under_13" class="light">Correcta</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                                <label for="over_13" class="light">Incorrecta</label>
+                            </div>
+    
+                        </div>
+    
+                        <div class="Op_B">
+                            
+                            <label>Opción B:</label>
+                            <input type="text" id="Opcion_B">
+                            <div class="radio-option">
+                                <input type="radio" id="rtacorrecta" value="correct2" name="Respuesta2">
+                                <label for="under_13" class="light">Correcta</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rtaincorrecta" value="nocorrecta2" name="Respuesta2">
+                                <label for="over_13" class="light">Incorrecta</label>
+                            </div>
+    
+                        </div>
+    
+                        <div class="Op_C">
+                            
+                            <label>Opción C:</label>
+                            <input type="text" id="Opcion_C">
+                            <div class="radio-option">
+                                <input type="radio" id="rtacorrecta" value="correct3" name="Respuesta3">
+                                <label for="under_13" class="light">Correcta</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rtaincorrecta" value="over_13" name="Respuesta3">
+                                <label for="over_13" class="light">Incorrecta</label>
+                            </div>
+    
+                        </div>
+    
+                        <div class="Op_D">
+                            
+                            <label>Opción D:</label>
+                            <input type="text" id="Opcion_D">
+                            <div class="radio-option">
+                                <input type="radio" id="rtacorrecta" value="correct4" name="Respuesta4">
+                                <label for="under_13" class="light">Correcta</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rtaincorrecta" value="over_13" name="Respuesta4">
+                                <label for="over_13" class="light">Incorrecta</label>
+                            </div>
+    
+                        </div>
+                    </form>
+                    
+
+                </div>
+            </details>
+        </div>
+       
+    </div>
+</body>
+</html>

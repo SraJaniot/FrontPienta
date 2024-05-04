@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Signup/Login form</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+   <section id="formHolder">
+
+      <div class="row">
+
+         <!-- Brand Box -->
+         <div class="col-sm-6 brand">
+
+            <div class="heading">
+               <div class="video-container">
+                  <iframe width="360" height="215" src="https://www.youtube.com/embed/2Xxib2lymG8?si=dL4aBtz_pjfv7CCn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+            
+         </div>
+
+
+         <!-- Form Box -->
+         <div class="col-sm-5 form">
+
+           
+
+            <!-- Signup Form -->
+            <div class="signup form-peice">
+               
+               
+               <form class="login-form" action="#" method="post">
+                  <div>
+                     <h2>Bienvenido a Pienta</h2>
+                    
+                  </div>
+                  <div class="form-group">
+                     <label for="loginemail">Correo</label>
+                     <input type="email" name="loginemail" id="loginemail" required>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="loginPassword">Contraseña</label>
+                     <input type="password" name="loginPassword" id="loginPassword" required>
+                  </div>
+
+                  <div class="CTA">
+                     <input type="submit" value="Ingresar">
+                  </div>
+               </form>
+            </div><!-- End Signup Form -->
+         </div>
+
+         <div id="popup" class="popup">
+            <div class="popup-content">
+               <div class="contenedorpopup">
+                  <h3>Verificación de 2 Pasos</h3>
+                  <form action="" method="post">
+                      <p>Introduce aquí el código recibido por mensaje vía WhatsApp o correo electrónico</p>
+                      <input type="text" id="codigo" name="codigo" placeholder="Introduce el código aquí">
+                      <input type="submit" value="Verificar">
+                  </form>
+                  
+              </div>
+            </div>
+        </div>
+      </div>
+
+   </section>
+
+
+   <footer>
+     
+   </footer>
+
+</div>
+
+</body>
+</html>
+
+<script>
+   var popup = document.getElementById("popup");
+   var btn = document.querySelector(".CTA input");
+   var span = document.getElementsByClassName("close")[0];
+
+   btn.onclick = function(event) {
+      event.preventDefault();
+      popup.style.display = "block";
+   }
+
+   span.onclick = function() {
+      popup.style.display = "none";
+   }
+
+   window.onclick = function(event) {
+      if (event.target == popup) {
+         popup.style.display = "none";
+      }
+   }
+</script>

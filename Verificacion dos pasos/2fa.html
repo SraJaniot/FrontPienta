@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de 2 Pasos</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+       
+        body::after {
+        content: "";
+        background: url("../logo/pienta.png") repeat;
+        opacity: 0.5; /* Ajusta este valor según tus necesidades */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        background-size: 10%;
+        }
+
+        body {
+        font-family: 'work sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        position: relative;
+        }
+
+        .contenedorpopup {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+           
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #671C34;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #671C34;
+        }
+        p {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="fondo">
+    <div class="container">
+        <h2>Verificación de 2 Pasos</h2>
+        <form action="" method="post">
+            <p>Introduce aquí el código recibido por mensaje vía WhatsApp o correo electrónico</p>
+            <input type="text" id="codigo" name="codigo" placeholder="Introduce el código aquí">
+            <input type="submit" value="Verificar">
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
