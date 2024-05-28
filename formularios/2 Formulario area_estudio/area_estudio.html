@@ -1,0 +1,38 @@
+
+ <!-- CSS VINCULADO PARA EL HTML-->
+ <link rel="stylesheet" href="stylearea_estudio.css">
+
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+ 
+         <!-- ID_SEDE-->
+         <select>
+             <!-- Los datos que vayas añadir aquí-->
+ 
+             <option value="1">Sede 1</option>
+             <option value="2">Sede 2</option>
+             <option value="3">Sede 3</option>
+             <option value="4">Sede 4</option>
+             <option value="5">Sede 5</option>
+             <option value="6">Sede 6</option>
+ 
+ 
+         </select>
+ 
+          <!-- Nombre área de estudio -->
+       <label for="nombre">Nombre área de estudio</label>
+       <input id="nombre" formControlName="nombre" required type="text" >
+         
+       
+         <!-- Descripción área de estudio -->
+       <label for="descripcion">Descripción</label>
+       <textarea id="descripcion" formControlName="descripcion" required></textarea>
+   
+   
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Área de estudio</button>
+         </div>
+     </form>
+   </div>

@@ -1,0 +1,51 @@
+
+ <!-- CSS VINCULADO PARA EL HTML-->
+<link rel="stylesheet" href="stylesede.css">
+
+
+
+<div class="contenido-contexto">
+    <form [formGroup]="contextoForm" > 
+
+        <!-- ID_INSTITUCIÓN-->
+        <select>
+            <!-- Los datos que vayas añadir aquí-->
+
+            <option value="1">Institución 1</option>
+            <option value="2">Institución 2</option>
+            <option value="3">Institución 3</option>
+            <option value="4">Institución 4</option>
+            <option value="5">Institución 5</option>
+            <option value="6">Institución 6</option>
+
+
+        </select>
+
+         <!-- Nombre sede -->
+      <label for="nombre">Nombre Sede</label>
+      <input id="nombre" formControlName="nombre" required type="text" >
+        
+      
+        <!-- Descripción sede -->
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" formControlName="descripcion" required></textarea>
+  
+        <!-- Dirección -->
+        <label for="autor">Dirección</label>
+        <input id="autor" formControlName="autor" required type="text">
+
+        <!-- Teléfono -->
+        <label for="autor">Teléfono</label>
+        <input id="autor" formControlName="autor" required type="text">
+
+        <!-- Email -->
+        <!-- Tener en cuenta que es de la persona quién está a cargo o en su debido caso, el subdirector -->
+        <label for="autor">Email del encargado</label>
+        <input id="autor" formControlName="autor" required type="text">
+  
+  
+        <div class="button-container">
+            <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Sede</button>
+        </div>
+    </form>
+  </div>

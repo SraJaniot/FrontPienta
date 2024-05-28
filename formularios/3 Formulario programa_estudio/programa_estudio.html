@@ -1,0 +1,53 @@
+
+ <!-- CSS VINCULADO PARA EL HTML-->
+ <link rel="stylesheet" href="styleprograma_estudio.css">
+
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+ 
+         <!-- ID_Área de estudio-->
+         <select>
+             <!-- Los datos que vayas añadir aquí-->
+ 
+             <option value="1">Área de estudio 1</option>
+             <option value="2">Área de estudio 2</option>
+             <option value="3">Área de estudio 3</option>
+             <option value="4">Área de estudio 4</option>
+             <option value="5">Área de estudio 5</option>
+             <option value="6">Área de estudio 6</option>
+ 
+ 
+         </select>
+ 
+          <!-- Nombre programa de estudio -->
+       <label for="nombre">Nombre programa de estudio</label>
+       <input id="nombre" formControlName="nombre" required type="text" >
+         
+       
+         <!-- Descripción programa de estudio -->
+       <label for="descripcion">Descripción</label>
+       <textarea id="descripcion" formControlName="descripcion" required></textarea>
+   
+        <!-- Tipo de formación-->
+        <label for="descripcion">Tipo de formación</label>
+        <select>
+            <!-- Los datos que vayas añadir aquí-->
+
+            <option value="1">Tipo de formación 1</option>
+            <option value="2">Tipo de formación 2</option>
+            <option value="3">Tipo de formación 3</option>
+            <option value="4">Tipo de formación 4</option>
+            <option value="5">Tipo de formación 5</option>
+            <option value="6">Tipo de formación 6</option>
+
+
+        </select>  
+
+
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Programa de estudio</button>
+         </div>
+     </form>
+   </div>

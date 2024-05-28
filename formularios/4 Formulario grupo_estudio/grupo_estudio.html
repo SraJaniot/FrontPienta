@@ -1,0 +1,55 @@
+
+ <!-- CSS VINCULADO PARA EL HTML-->
+ <link rel="stylesheet" href="stylegrupoestudio.css">
+
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+        
+         <!-- ID_NUMERO_DE_GRUPO -->
+        <label for="nombre">Id numero de grupo</label>
+        <input id="nombre" formControlName="nombre" required type="text" >
+
+         <!-- ID_Programa de estudio-->
+         <select>
+             <!-- Los datos que vayas añadir aquí-->
+ 
+             <option value="1">Programa de estudio 1</option>
+             <option value="2">Programa de estudio 2</option>
+             <option value="3">Programa de estudio 3</option>
+             <option value="4">Programa de estudio 4</option>
+             <option value="5">Programa de estudio 5</option>
+             <option value="6">Programa de estudio 6</option>
+ 
+ 
+         </select>
+ 
+          <!-- Nombre Grupo de estudio -->
+       <label for="nombre">Nombre Grupo de estudio</label>
+       <input id="nombre" formControlName="nombre" required type="text" >
+         
+       <!-- Jornada-->
+       <label for="nombre">Jornada</label>
+       <select>
+        <!-- Los datos que vayas añadir aquí-->
+
+        <option value="1">Mañana</option>
+        <option value="2">Tarde</option>
+        <option value="3">Noche</option>
+        <option value="4">Mixta</option>
+        <option value="5">Virtual</option>
+        <option value="6">A distancia</option>
+
+
+    </select>
+       
+         <!-- Descripción Grupo de estudio -->
+       <label for="descripcion">Descripción</label>
+       <textarea id="descripcion" formControlName="descripcion" required></textarea>
+   
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Programa de estudio</button>
+         </div>
+     </form>
+   </div>
