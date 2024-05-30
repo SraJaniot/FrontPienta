@@ -1,0 +1,35 @@
+<!-- CSS VINCULADO PARA EL HTML-->
+
+<link rel="stylesheet" href="stylepg.css">
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+        
+
+        <h1> Bienvenido al creador de pruebas genéricas</h1>
+
+        <h5>En este espacio usted solo colocará la cantidad de preguntas que desee realizar en la prueba y el sistema automáticamente
+            generará una prueba con preguntas aleatorias de la base de datos.
+        </h5>
+
+        <label for="nombre">Cantidad de preguntas</label>
+         <!-- Cantidad preguntas-->
+         <select>
+             <!-- Los datos que vayas añadir aquí-->
+ 
+             <option value="1">30</option>
+             <option value="2">40</option>
+             <option value="3">50</option>
+             <option value="4">75</option>
+             <option value="5">100</option>
+
+ 
+ 
+         </select>
+ 
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Crear prueba genérica</button>
+         </div>
+     </form>
+   </div>

@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  h1{
+    margin: 10px;
+  }
+
+  .grid-container {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Ajusta este valor para cambiar el espacio entre los botones */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px; /* Ajusta este valor para cambiar el espacio entre el <h1> y los botones */
+  }
+  
+  .button {
+    margin-right: 10px; /* Ajusta este valor para cambiar el espacio a la derecha de cada botón */
+    width: 300px; /* Ajusta este valor para cambiar el ancho de los botones */
+  }
+
+  
+  .button{
+    width: 100%;
+    padding: 15px 40px;
+    min-width: 275px; /* Aumenta este valor para hacer los botones más largos */
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+    background-color: #704214;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Alinea los elementos al centro */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button span {
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #4f2e0d;
+  }
+  
+  /* ICONOS */
+  
+  .tabler--a-b-2, .tabler--adjustments-plus, .tabler--bomb{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+  }
+  
+  .tabler--a-b-2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M16 21h3c.81 0 1.48-.67 1.48-1.48l.02-.02c0-.82-.69-1.5-1.5-1.5h-3zm0-6h2.5c.84-.01 1.5.66 1.5 1.5s-.66 1.5-1.5 1.5H16zM4 9V5c0-1.036.895-2 2-2s2 .964 2 2v4m-5.01 2.98a9 9 0 0 0 9 9m9-9a9 9 0 0 0-9-9M8 7H4'/%3E%3C/svg%3E");
+  }
+  
+  .tabler--adjustments-plus {
+      
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 10a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2-6v4m0 4v8m7.958-4.408A2 2 0 1 0 12 18m0-14v10m0 4v2m4-13a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2-3v1m0 4v3m-2 7h6m-3-3v6'/%3E%3C/svg%3E");
+  }
+  
+  .tabler--bomb {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M15.349 5.349L18.65 8.65a1.2 1.2 0 0 1 0 1.698l-.972.972a7.5 7.5 0 1 1-5-5l.972-.972a1.2 1.2 0 0 1 1.698 0z'/%3E%3Cpath d='m17 7l1.293-1.293A2.4 2.4 0 0 0 19 4a1 1 0 0 1 1-1h1M7 13a3 3 0 0 1 3-3'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .grid-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .button{
+        font-size: 14px;
+        padding: 12px;
+        width: 100%; /* En pantallas pequeñas, el ancho del botón será del 100% */
+        max-width: 100%; /* Asegura que los botones no se corten */
+    }
+  }
+  

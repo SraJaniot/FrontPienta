@@ -1,0 +1,71 @@
+
+input {
+	margin-top: 20px; /* Ajusta este valor para cambiar el espacio entre la imagen y el input */
+	margin-bottom: 5px; /* Ajusta este valor para cambiar el espacio entre los inputs */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 45px;
+  }
+
+input[type="email"] {
+	width: 100%; /* Esto hará que el input ocupe todo el ancho disponible en su contenedor */
+  }
+input[type="email"] {
+	width: 260px; /* Esto hará que cada input de tipo email tenga un ancho de 300px */
+  }
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+.card-container {
+	background-color: #75203b;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+
+
+.card-container .round {
+	border: 1px solid #e8e8e8;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	margin-top: 20px; /* Ajusta este valor para cambiar el espacio entre la imagen y el input */
+	margin-bottom: 5px; /* Ajusta este valor para cambiar el espacio entre los inputs */
+	background-color: white;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	border: none;
+	border-radius: 10px;
+	color: #704214;
+	font-family:'work sans', sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	
+	margin: 15px;
+	color:#704214;
+}
+
+button:hover {
+	background-color: #e8e8e8;
+}
+
+button:active {
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	transform: scale(0.95); /* Esto hará que el botón se reduzca ligeramente cuando se presione, dando la ilusión de profundidad */
+	
+}
