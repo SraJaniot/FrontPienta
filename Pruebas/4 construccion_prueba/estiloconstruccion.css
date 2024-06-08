@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    
+
+}
+
+.contenedor-cuerpo-prueba {
+    display: flex;
+    flex-direction: column; /* Esto hará que los hijos de .contenedor-cuerpo-prueba se muestren en una columna */
+  }
+
+.contenido-de-prueba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+  
+.grid-item {
+    padding: 10px; /* Esto añadirá un padding de 10px a los botones */
+    margin: 5px;
+    text-align: center; /* Esto centrará el texto de los botones */
+    background-color: white; /* Esto cambiará el color de fondo de los botones */
+    border-color: #4f2e0d;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.grid-item:hover {
+    background-color: #4f2e0d; /* Esto cambiará el color de fondo de los botones al pasar el ratón por encima */
+    color: white; /* Esto cambiará el color del texto de los botones al pasar el ratón por encima */
+}
+
+h2{
+
+    color: #4f2e0d;
+}
+
+h1{
+    color: #671C34;
+}
