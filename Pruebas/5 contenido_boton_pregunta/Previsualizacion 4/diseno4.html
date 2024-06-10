@@ -1,17 +1,43 @@
 <!-- ESTO ES PARA ROL ESRUDIANTE/APRENDIZ-->
+<title> Previsualización 4</title>
 
 <link rel="stylesheet" href="estilocontenido4.css">
 
 <div class="contenido-pregunta">
-    
+
     <form [formGroup]="preguntaForm">
-        <label for="nombre">Pregunta</label>
-        <input id="nombre" formControlName="nombre" required type="text">
-        <label for="nombre">Respuesta</label>
-        <input id="nombre" formControlName="nombre" required type="text">
-        <div class="button-container">
-            <button [disabled]="!preguntaForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Pregunta</button>
-        </div>
+
+            <label class="contextotexto">Contexto en texto</label>
+
+            <img class="imagencontexto" src="../../../logo/icons/user.png">
+
+            <label class="preguntatexto" for="pregunta"> Pregunta (cuando sea texto) </label>
+
+            <div class="radio-options-container">
+
+                <div class="radio-option">
+                    <input type="radio" id="rtacorrecta" value="correct1" name="Respuesta1">
+                    <label for="under_13" class="light">20</label>
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <label for="over_13" class="light"> 30</label>
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <label for="over_13" class="light">25</label>
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <label for="over_13" class="light">No hay respuesta correcta.</label>
+                </div>
+
+            </div>
+            
+
     </form>
     
 </div>

@@ -1,17 +1,43 @@
 <!-- ESTO ES PARA ROL ESRUDIANTE/APRENDIZ-->
+<title> Previsualización 6</title>
 
 <link rel="stylesheet" href="estilocontenido6.css">
 
 <div class="contenido-pregunta">
-    
+
     <form [formGroup]="preguntaForm">
-        <label for="nombre">Pregunta</label>
-        <input id="nombre" formControlName="nombre" required type="text">
-        <label for="nombre">Respuesta</label>
-        <input id="nombre" formControlName="nombre" required type="text">
-        <div class="button-container">
-            <button [disabled]="!preguntaForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Pregunta</button>
-        </div>
+
+            <label class="contextotexto">Contexto en texto</label>
+
+            <img class="imagencontexto" src="../../../logo/icons/user.png">
+
+            <label class="preguntatexto" for="pregunta">La ecuación para resolver este gráfico es: (Pregunta cuando sea texto) </label>
+
+            <div class="radio-options-container">
+
+                <div class="radio-option">
+                    <input type="radio" id="rtacorrecta" value="correct1" name="Respuesta1">
+                    <img class="imagenopcion" src="../../../logo/icons/Florespiritual.jpg">
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <img class="imagenopcion" src="../../../logo/icons/user.png">
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <img class="imagenopcion" src="../../../logo/icons/user.png">
+                </div>
+    
+                <div class="radio-option">
+                    <input type="radio" id="rtaincorrecta" value="nocorrecta1" name="Respuesta1">
+                    <img class="imagenopcion" src="../../../logo/icons/Pikachu.jpg">
+                </div>
+
+            </div>
+            
+
     </form>
     
 </div>

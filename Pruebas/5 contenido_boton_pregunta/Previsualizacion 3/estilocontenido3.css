@@ -51,3 +51,25 @@
     font-weight: 400;
     color: #000000;
   }
+
+
+  /* Estilos para pantallas de tamaño grande (por ejemplo, computadoras de escritorio) */
+@media (min-width: 1200px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}
+
+/* Estilos para pantallas de tamaño mediano (por ejemplo, tabletas) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}
+
+/* Estilos para pantallas de tamaño pequeño (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}
