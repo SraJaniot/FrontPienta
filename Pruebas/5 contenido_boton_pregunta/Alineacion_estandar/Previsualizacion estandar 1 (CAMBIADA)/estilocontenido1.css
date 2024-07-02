@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.contenido-pregunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    font-family: 'work sans';
+
+}
+
+.contextotexto {
+  display: block; /* Añade esta línea */
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #704214;
+  margin: 5px;
+  padding: 5px;
+}
+
+ /*PARA TENER EN CUENTA*/ 
+ 
+ /*Si la imagen es bastante grande 
+se recomienda ponerle un height:550px; 
+para que de tal manera este pueda manejar 
+un tamaño estándar y sea visible*/ 
+  .imagencontexto {
+    display: block;
+    margin: auto; /* Añade esta línea */
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .imagenpregunta {
+    display: block;
+    margin: auto; /* Añade esta línea */
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
+
+
+  .preguntatexto{
+    display: block; /* Añade esta línea */
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    margin: 5px;
+    padding: 5px;
+  }
+
+.radio-option{
+    display: block; /* Añade esta línea */
+    width: 98%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  /* Estilos para pantallas de tamaño grande (por ejemplo, computadoras de escritorio) */
+@media (min-width: 1200px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}
+
+/* Estilos para pantallas de tamaño mediano (por ejemplo, tabletas) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}
+
+/* Estilos para pantallas de tamaño pequeño (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+  .contenido-pregunta {
+    /* Tus estilos aquí */
+  }
+}

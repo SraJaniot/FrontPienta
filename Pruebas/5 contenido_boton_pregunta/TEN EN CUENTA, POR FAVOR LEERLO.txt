@@ -1,0 +1,13 @@
+TEN EN CUENTA, POR FAVOR LEERLO (También estará en los archivos como comentarios):
+
+- Cada alineación viene con su respectiva carpeta y cada previsualización de esta tiene su respectiva subcarpeta y archivos según el orden presentado en el borrador que se fue enviado por WhatsApp (por favor revisar)
+
+- Cada archivo antiguo y nuevo tiene su respectiva mención (las antiguas son las ahora llamadas CAMBIADAS y las que se integraron reciente son NUEVOS) para entenderse cuáles ya estaban y cuáles son los nuevos que se implementaron, también se tiene en cuenta que los que estaban se implementaron otras cosas para complementar según el punto anterior
+
+- Ahora cada etiqueta viene separada con div de contexto y div de pregunta, para que sea más accesible entender cuál cosa es de cuál
+
+- Si las imágenes de contexto y de preguntas son grandes (mayores de 1000px) se recomienda que en el css en la propiedad height (sea de .imagencontexto o .imagenpregunta) sea de 550px para así una mejor visibilidad de esta
+
+- Estaré actualizando este bloc de notas cuando hayan nuevos cambios dentro de las carpetas y su respectiva fecha y actualización
+
+- POR FAVOR NO IMPLEMENTES TODOS LOS FORMULARIOS HASTA QUE NO SE HAYAN TERMINADO POR COMPLETO, AQUÍ MISMO Y EN EL GIT TE ESTARÉ AVISANDO CUANDO ESTÉN TODOS COMPLETOS
