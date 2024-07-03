@@ -8,6 +8,13 @@ TEN EN CUENTA, POR FAVOR LEERLO (También estará en los archivos como comentari
 
 - Si las imágenes de contexto y de preguntas son grandes (mayores de 1000px) se recomienda que en el css en la propiedad height (sea de .imagencontexto o .imagenpregunta) sea de 550px para así una mejor visibilidad de esta
 
+- Los contenedores de cada opción tendrán un width de 98% para que a lo ancho no se salga del contenedor principal
+
+
 - Estaré actualizando este bloc de notas cuando hayan nuevos cambios dentro de las carpetas y su respectiva fecha y actualización
 
 - POR FAVOR NO IMPLEMENTES TODOS LOS FORMULARIOS HASTA QUE NO SE HAYAN TERMINADO POR COMPLETO, AQUÍ MISMO Y EN EL GIT TE ESTARÉ AVISANDO CUANDO ESTÉN TODOS COMPLETOS
+
+-------------//------------//-------------//------------//-------------//
+
+PREGUNTAS ESTANDAR HECHAS
