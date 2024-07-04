@@ -29,14 +29,30 @@
   padding: 5px;
 }
   
-  .imagencontexto {
-    display: block;
-    margin: auto; /* Añade esta línea */
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    padding: 5px;
-  }
+
+/*PARA TENER EN CUENTA*/ 
+ 
+ /*Si la imagen es bastante grande 
+se recomienda ponerle un height:550px; 
+para que de tal manera este pueda manejar 
+un tamaño estándar y sea visible*/ 
+
+.imagencontexto {
+  display: block;
+  margin: auto; /* Añade esta línea */
+  width: auto;
+  height: 550px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.imagenpregunta {
+  display: block;
+  margin: auto; /* Añade esta línea */
+  width: auto;
+  height: 550px;
+  padding: 5px;
+}
 
   .preguntatexto{
     display: block; /* Añade esta línea */
@@ -68,7 +84,7 @@
 .radio-option label{
   margin-top: 5px; /* Añade un poco de espacio arriba del texto */
 }
-  .radio-options-container {
+  .opciones-horizontal {
     display: flex;
     justify-content: space-between; /* Esto añade espacio igual entre los elementos */
   }

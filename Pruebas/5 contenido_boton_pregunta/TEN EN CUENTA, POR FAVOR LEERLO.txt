@@ -15,6 +15,22 @@ TEN EN CUENTA, POR FAVOR LEERLO (También estará en los archivos como comentari
 
 - POR FAVOR NO IMPLEMENTES TODOS LOS FORMULARIOS HASTA QUE NO SE HAYAN TERMINADO POR COMPLETO, AQUÍ MISMO Y EN EL GIT TE ESTARÉ AVISANDO CUANDO ESTÉN TODOS COMPLETOS
 
+
+04/07/2024
+
+--------------------------***Actualización***--------------------------
+
+- Ahora en las alineaciones cuadradas, para una mejora de visibilidad de contenido y no quede pegado el borde de la opción con el borde del contenedor principal, se colocará un padding de 15px y el contenendor para opciones (en el caso de cuadrado) se llamará "opciones-cuadrado"
+
+
 -------------//------------//-------------//------------//-------------//
 
 PREGUNTAS ESTANDAR HECHAS
+
+PREGUNTAS CUADRADO HECHAS
+
+PREGUNTAS HORIZONTAL HECHAS
+
+04/07/2024
+
+FINALIZADO FORMULARIOS CON SU RESPECTIVO ORDEN Y CSS DE CADA UNO (el CSS se puede usar uno para cada alineación, es decir, el css de horizontal, se puede usar para todos los HTML en alineación horizontal y así sucesivamente)
