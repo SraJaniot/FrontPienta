@@ -28,30 +28,37 @@
   margin: 5px;
   padding: 5px;
 }
-  
 
-/*PARA TENER EN CUENTA*/ 
+ /*PARA TENER EN CUENTA*/ 
  
  /*Si la imagen es bastante grande 
 se recomienda ponerle un height:550px; 
 para que de tal manera este pueda manejar 
 un tamaño estándar y sea visible*/ 
+  .imagencontexto {
+    display: block;
+    margin: auto; /* Añade esta línea */
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+  }
 
-.imagencontexto {
-  display: block;
-  margin: auto; /* Añade esta línea */
-  width: auto;
-  height: 550px;
-  border-radius: 10px;
-  padding: 5px;
-}
+  .imagenpregunta {
+    display: block;
+    margin: auto; /* Añade esta línea */
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
 
-.imagenpregunta {
-  display: block;
-  margin: auto; /* Añade esta línea */
-  width: auto;
-  height: 550px;
-  padding: 5px;
+  .imagenopcion{
+    display: block;
+    margin: auto; /* Añade esta línea */
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
   .preguntatexto{
@@ -76,18 +83,35 @@ un tamaño estándar y sea visible*/
     color: #000000;
   }
 
-  #radio-option-h input[type="radio"],
-  #radio-option-h label {
-  display: inline-block; /* Hace que el radio y su etiqueta estén en la misma línea */
+
+/*ALINEACIÓN CUADRADO*/
+
+/*Para la mejora de visualización del contenedor general y de las opciones
+se recomienda colocar un padding para que no se permita el espaciado diminuto entre borde
+opcion y borde general*/
+
+.opciones-cuadrado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Esto crea dos columnas de igual tamaño */
+  gap: 10px; /* Esto añade un espacio de 10px entre los elementos */
+  padding: 15px;
 }
 
-#radio-option-h label{
-  margin-top: 5px; /* Añade un poco de espacio arriba del texto */
+
+/*ALINEACIÓN HORIZONTAL*/
+#radio-option-h input[type="radio"],
+#radio-option-h label {
+display: inline-block; /* Hace que el radio y su etiqueta estén en la misma línea */
 }
-  .opciones-horizontal {
-    display: flex;
-    justify-content: space-between; /* Esto añade espacio igual entre los elementos */
-  }
+#radio-option-h label{
+margin-top: 5px; /* Añade un poco de espacio arriba del texto */
+}
+.opciones-horizontal {
+  display: flex;
+  justify-content: space-between; /* Esto añade espacio igual entre los elementos */
+}
+
+
 
   /* Estilos para pantallas de tamaño grande (por ejemplo, computadoras de escritorio) */
 @media (min-width: 1200px) {
@@ -109,3 +133,4 @@ un tamaño estándar y sea visible*/
     /* Tus estilos aquí */
   }
 }
+
