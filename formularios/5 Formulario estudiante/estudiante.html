@@ -1,0 +1,68 @@
+
+ <!-- CSS VINCULADO PARA EL HTML-->
+ <link rel="stylesheet" href="styleestudiante.css">
+
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+        
+        
+      <!-- Grupo al que pertenece-->
+        <label for="nombre">Grupo Perteneciente</label>
+            <select>
+                <!-- Los datos que vayas añadir aquí-->
+        
+                    <option value="1">Grupo perteneciente 1</option>
+                    <option value="2">Grupo perteneciente 2</option>
+                    <option value="3">Grupo perteneciente 3</option>
+                    <option value="4">Grupo perteneciente 4</option>
+                    <option value="5">Grupo perteneciente 5</option>
+                    <option value="6">Grupo perteneciente 6</option>
+        
+        
+            </select>
+
+      <!-- Nombre del estudiante -->
+        <label for="nombre">Nombre del estudiante</label>
+        <input id="nombre" formControlName="nombre" required type="text">
+
+
+ 
+      <!--Dirección del estudiante -->
+       <label for="nombre">Dirección</label>
+       <input id="nombre" formControlName="nombre" required type="text">
+      
+      <!--Teléfono del estudiante -->
+       <label for="nombre">Teléfono</label>
+       <input id="nombre" formControlName="nombre" required type="text">
+
+      <!--Correo del estudiante -->
+        <label for="nombre">Correo</label>
+        <input id="nombre" formControlName="nombre" required type="text">
+      
+      
+      <!--Cédula del estudiante -->
+        <label for="nombre">Documento del estudiante (SÓLO NÚMEROS)</label>
+        <input id="nombre" formControlName="nombre" required type="text"> 
+
+       <!-- Tipo de documento -->
+       <label for="nombre">Tipo de documento</label>
+       <select>
+        <!-- Los datos que vayas añadir aquí-->
+
+        <option value="1">RC (Registro Civil)</option>
+        <option value="1">TI (Tarjeta de Identidad)</option>
+        <option value="2">CC (Cédula de Ciudadanía)</option>
+        <option value="3">CE (Cédula de Extranjería)</option>
+        <option value="4">PP (Pasaporte)</option>
+        <option value="5">PEP (Permiso Especial de Permanencia)</option>
+
+    </select>
+
+   
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Agregar Grupo perteneciente</button>
+         </div>
+     </form>
+   </div>
