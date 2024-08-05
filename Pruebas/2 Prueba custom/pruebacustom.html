@@ -1,4 +1,47 @@
 <!-- ESTO ES PARA ROL TUTOR-->
 
-<!-- LINK CSS-->
-<link rel="stylesheet" href="estilopruebacustom.css">
+ <!-- CSS VINCULADO PARA EL HTML-->
+ <link rel="stylesheet" href="stylepruebacustom.css">
+
+
+
+ <div class="contenido-contexto">
+     <form [formGroup]="contextoForm" > 
+        
+        
+      <!-- Área al que pertenece-->
+        <label for="nombre">Área</label>
+            <select>
+                <!-- Los datos que vayas añadir aquí-->
+        
+                    <option value="1">Área perteneciente 1</option>
+                    <option value="2">Área perteneciente 2</option>
+                    <option value="3">Área perteneciente 3</option>
+                    <option value="4">Área perteneciente 4</option>
+                    <option value="5">Área perteneciente 5</option>
+                    <option value="6">Área perteneciente 6</option>
+        
+        
+            </select>
+
+      
+       <!-- Cantidad de preguntas -->
+       <label for="nombre">Cantidad de preguntas</label>
+       <select>
+        <!-- Los datos que vayas añadir aquí-->
+
+        <option value="1">10</option>
+        <option value="1">15</option>
+        <option value="2">20</option>
+        <option value="3">25</option>
+        <option value="4">30</option>
+        <option value="5">35</option>
+
+    </select>
+
+   
+         <div class="button-container">
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Añadir</button>
+         </div>
+     </form>
+   </div>
