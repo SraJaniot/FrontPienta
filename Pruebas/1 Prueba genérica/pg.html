@@ -30,6 +30,29 @@
  
  
          </select>
+
+
+         <label for="nombre">Tipo de prueba</label>
+         <!-- Cantidad preguntas-->
+         <select>
+             <!-- Los datos que vayas añadir aquí-->
+ 
+             <option value="1">Prueba T y T</option>
+             <option value="2">Prueba Razonamiento Cuantitativo</option>
+             <option value="3">Prueba Lectura Crítica</option>
+             <option value="4">Prueba Competencias Ciudadanas</option>
+             <option value="5">Prueba Inglés</option>
+
+         </select>
+
+
+         <div class="date-input-container">
+
+            <label for="fecha">Fecha de presentación</label>
+            <input type="date" id="start" name="trip-start" value="2024-07-22" min="2018-01-01" max="2025-12-31" />
+
+         </div>
+        
  
          <div class="button-container">
              <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Crear prueba genérica</button>
