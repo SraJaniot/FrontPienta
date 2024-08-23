@@ -1,47 +1,41 @@
 <!-- ESTO ES PARA ROL TUTOR-->
 
- <!-- CSS VINCULADO PARA EL HTML-->
- <link rel="stylesheet" href="stylepruebacustom.css">
+
+<!-- CSS VINCULADO PARA EL HTML-->
+
+<link rel="stylesheet" href="pruebacustomstyle.css">
 
 
-
- <div class="contenido-contexto">
+ <div class="contenido-PC">
      <form [formGroup]="contextoForm" > 
         
-        
-      <!-- Área al que pertenece-->
-        <label for="nombre">Área</label>
-            <select>
-                <!-- Los datos que vayas añadir aquí-->
-        
-                    <option value="1">Área perteneciente 1</option>
-                    <option value="2">Área perteneciente 2</option>
-                    <option value="3">Área perteneciente 3</option>
-                    <option value="4">Área perteneciente 4</option>
-                    <option value="5">Área perteneciente 5</option>
-                    <option value="6">Área perteneciente 6</option>
-        
-        
-            </select>
 
-      
-       <!-- Cantidad de preguntas -->
-       <label for="nombre">Cantidad de preguntas</label>
-       <select>
-        <!-- Los datos que vayas añadir aquí-->
+        <h1> Bienvenido al creador de pruebas CUSTOM</h1>
 
-        <option value="1">10</option>
-        <option value="1">15</option>
-        <option value="2">20</option>
-        <option value="3">25</option>
-        <option value="4">30</option>
-        <option value="5">35</option>
+        <h5>
+        En este espacio usted solo colocará el nombre de la prueba, fecha de iniciación, fecha final, duración de la prueba y la cantidad de preguntas que desee realizar en la prueba.
+        </h5>
+        <h5 id="importante">TENGA EN CUENTA QUE: Debe seleccionar manualmente las preguntas que desea añadir a la prueba.</h5>
 
-    </select>
+        <label for="text">Nombre de la Prueba</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre de la prueba" required>
 
-   
+         <div class="date-input-container">
+
+            <label for="fecha">Fecha de presentación Inicio</label>
+            <input type="datetime-local" id="start" name="trip-start" value="2024-07-22" min="2018-01-01" max="2025-12-31" />
+            
+            <label for="fecha">Fecha de presentación Fin</label>
+            <input type="datetime-local" id="start" name="trip-start" value="2024-07-22" min="2018-01-01" max="2025-12-31" />
+                
+            <label for="cronometro">Duración de Prueba</label>
+            <input type="number" id="minutos" placeholder="Cantidad en minutos" min="0">
+
+
+         </div>
+ 
          <div class="button-container">
-             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Añadir</button>
+             <button [disabled]="!contextoForm.valid" (click)="onSubmit()" class="btn" type="submit">Siguiente</button>
          </div>
      </form>
    </div>
