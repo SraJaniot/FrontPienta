@@ -239,7 +239,7 @@
     color: #333;
 }
 
-.date-input-container input[type="date"] {
+.date-input-container input[type="datetime-local"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -250,17 +250,17 @@
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.date-input-container input[type="date"]:focus {
+.date-input-container input[type="datetime-local"]:focus {
     border-color: #671C34;
     box-shadow: 0 0 5px #671C34;
     outline: none;
 }
 
-.date-input-container input[type="date"]::-webkit-calendar-picker-indicator {
+.date-input-container input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     filter: invert(0.5);
 }
 
-.date-input-container input[type="date"]::-webkit-inner-spin-button,
-.date-input-container input[type="date"]::-webkit-clear-button {
+.date-input-container input[type="datetime-local"]::-webkit-inner-spin-button,
+.date-input-container input[type="datetime-local"]::-webkit-clear-button {
     display: none;
 }
