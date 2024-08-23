@@ -163,10 +163,7 @@
       }
   
     }
-  
-  
-  
-  
+ 
   
   .btn {
     background-color: #671C34; /* Blue */
@@ -177,7 +174,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 8px 2px;
+
     cursor: pointer;
     border-radius: 4px;
     transition-duration: 0.4s; /* transition */
@@ -193,25 +190,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  
-  .dropzone {
-    border: 2px dashed #671C34;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    margin: 10px 0;
-  }
-  
-  .dropzone p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .dropzone.dragover {
-    background-color: #f0f0f0;
-  }
+
   
   button:disabled {
     background-color: #cccccc;
@@ -240,6 +219,7 @@
 }
 
 .date-input-container input[type="datetime-local"] {
+  margin: 5px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -263,4 +243,17 @@
 .date-input-container input[type="datetime-local"]::-webkit-inner-spin-button,
 .date-input-container input[type="datetime-local"]::-webkit-clear-button {
     display: none;
+}
+#cronometro-container {
+  margin-top: 20px;
+}
+
+#cronometro {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+#minuto{
+  width: 60px;
+  margin-right: 5px;
 }
