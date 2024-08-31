@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Overlock");
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  background-image: url("https://previews.123rf.com/images/konstantinos/konstantinos0802/konstantinos080200021/2576129-dar-información.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen en el div */
+  font-family: "overlock", Helvetica, sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+
+.pop-up {
+  position: absolute;
+  z-index: 10;
+  width: 400px;
+  height: 140px;
+  left: 0;
+  bottom: -40px;
+  background: #fff;
+  box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.pop-up .presentar {
+  float: left;
+  margin-left: 20px;
+  font-size: 35px;
+  line-height: 90px;
+}
+
+.pop-up .preview {
+  float: right;
+  font-weight: 400;
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 20px;
+  margin: 25px 20px 0 0;
+}
+
+.pop-up .preview td {
+  padding: 3px; /* Ajusta el padding para agregar espacio entre los td */
+  text-transform: uppercase;
+}
+
+.btn-presentar {
+  background-color: #671C34; /* red vine */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px 0 2px; /* Ajusta el margen superior para mover el botón hacia arriba */
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.btn-presentar:hover {
+
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
