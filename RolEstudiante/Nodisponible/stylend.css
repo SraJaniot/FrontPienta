@@ -1,0 +1,65 @@
+/* context.component.css */
+
+  .context-form div {
+    margin-bottom: 15px;
+  }
+
+  .pruebasnodisponibles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center; /* Centra el contenido de texto dentro del div */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 15px;
+    color: #704214;
+  }
+  
+  h3 {
+    text-align: center; /* Centra el texto del h5 */
+  }
+  
+  img {
+    display: block;
+    margin: auto; /* Centra la imagen */
+  }
+/* Responsive design */
+ @media (max-width: 768px) {
+    .context-form {
+      padding: 15px;
+    }
+  
+    .context-form div {
+      margin-bottom: 10px;
+    }
+
+  .contenido-contexto {
+      width: 100%;
+  
+  }
+  
+
+  
+  
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding: 15px;
+      text-align: center;
+      color: #704214;
+    }
+
+}
