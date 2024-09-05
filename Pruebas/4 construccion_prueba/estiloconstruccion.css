@@ -69,6 +69,33 @@
     align-items: center; /* Alinea verticalmente los botones */
 }
 
+
+/*CRONOMETRO */
+
+.cronometro-contenedor {
+    position: absolute; /* Posiciona el contenedor de manera absoluta */
+    top: 0; /* Posiciona el contenedor en la parte superior */
+    right: 0; /* Posiciona el contenedor en la parte derecha */
+    display: flex; /* Utiliza flexbox para alinear los divs internos */
+    padding: 10px; /* Añade un padding de 10px */
+}
+
+.cronometro {
+    margin: 0 5px; /* Añade un margen entre los divs */
+    border: 2px solid #671C34; /* Añade un borde de 2px con color */
+    border-radius: 5px; /* Añade bordes redondeados */
+    padding: 10px; /* Añade un padding de 10px */
+    
+}
+
+.numbers {
+    font-family: "Montserrat", sans-serif;
+    color: #183059;
+    margin-right: 5px; /* Añade un margen a la derecha del número */
+}
+
+/*OTROS*/
+
 h2{
 
     color: #4f2e0d;
