@@ -81,7 +81,7 @@
 }
 
 .cronometro {
-    margin: 0 5px; /* Añade un margen entre los divs */
+    margin: 0 15px; /* Añade un margen entre los divs */
     border: 2px solid #671C34; /* Añade un borde de 2px con color */
     border-radius: 5px; /* Añade bordes redondeados */
     padding: 10px; /* Añade un padding de 10px */
