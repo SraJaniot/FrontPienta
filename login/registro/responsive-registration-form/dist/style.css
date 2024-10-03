@@ -125,16 +125,7 @@ body {
 .form_wrapper input[type=submit]:focus {
   background: #e1a70a;
 }
-.form_wrapper input[type=checkbox], .form_wrapper input[type=radio] {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
+
 
 .form_container .row .col_half.last {
   border-left: 1px solid #cccccc;
@@ -183,31 +174,6 @@ body {
   display: block;
   width: 7px;
   height: 20px;
-  border-color: #000000;
-}
-
-.radio_option label {
-  margin-right: 1em;
-}
-.radio_option label:before {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  margin-right: 0.5em;
-  border-radius: 100%;
-  vertical-align: -3px;
-  border: 2px solid #cccccc;
-  padding: 0.15em;
-  background-color: transparent;
-  background-clip: content-box;
-  transition: all 0.2s ease;
-}
-.radio_option input:hover + label:before {
-  border-color: #000000;
-}
-.radio_option input:checked + label:before {
-  background-color: #000000;
   border-color: #000000;
 }
 
