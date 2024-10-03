@@ -1,0 +1,69 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Registration Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<!-- partial:index.partial.html -->
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Bienvenido a Pienta</h2>
+      <h3>Registro</h3>
+    </div>
+
+    <div class="entradas"> 
+           
+      <input type="text" name="ficha" placeholder="Ficha" required />
+    </div>
+
+    <div class="row clearfix">
+
+
+        <div class="entradas"> 
+           
+          <input type="text" name="nombre" placeholder="Nombre completo" required />
+        </div>
+
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="entradas"> 
+            
+            <input type="email" name="email" placeholder="Correo" required />
+          </div>
+
+          <div class="entradas select_option">
+            <select required>
+              <option value="">Tipo de documento</option>
+              <option value="cc">Cédula de ciudadanía</option>
+              <option value="ce">Cédula de extranjería</option>
+              <option value="ti">Tarjeta de identidad</option>
+              <option value="pp">Pasaporte</option>
+            </select>
+          </div>
+
+          <div class="entradas"> 
+           
+            <input type="text" name="documento" placeholder="Número de documento" required />
+          </div>
+
+          <div class="entradas"> 
+           
+            <input type="text" name="direccion" placeholder="Dirección" required />
+          </div>
+
+          <div class="entradas"> 
+           
+            <input type="text" name="celular" placeholder="Teléfono celular" required />
+          </div>
+
+          <input class="button" type="submit" value="Registrarse" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
